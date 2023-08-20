@@ -16,6 +16,33 @@ namespace TestProject1
         internal static Stack<int> GetNextGreaterValue(Stack<int> sourceStack)
         {
             Stack<int> result = null;
+            int elementoActual;
+            List<int> lista = new List<int>();
+            int numMayor;
+            int i = 3;
+
+            foreach (int elemento in sourceStack)
+            {
+                elementoActual = elemento;
+                lista.add(elementoActual);
+            }
+            foreach (int elem in sourceStack) 
+            {
+                numMayor = -1;
+                foreach(int num in lista)
+                {
+                    if(num != elem) 
+                    {
+                        if (num > elem) 
+                        {
+                            numMayor = num;
+                        }
+                        lista[i] = numMayor;
+                        i = i - 1;
+                    }
+                }
+            
+            }
 
             return result;
         }
