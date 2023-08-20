@@ -43,7 +43,10 @@ namespace TestProject1
                 }
             
             }
-
+            result.push(lista[0]);
+            result.push(lista[1]);
+            result.push(lista[2]);
+            result.push(lista[3]);
             return result;
         }
 
